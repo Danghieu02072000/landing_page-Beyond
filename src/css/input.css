@@ -17,7 +17,7 @@
     @apply  font-medium text-base  py-4 px-7 leading-4 rounded-[41px] inline-block transition-all duration-1000
   }
   .btn-linear {
-     @apply bg-gradient-to-r from-[#F67102] to-[#F4A91E] text-white
+     @apply bg-gradient-to-r from-[#F67102] to-[#F4A91E] text-white hover:opacity-75 
   }
   .hover_nav {
     @apply after:absolute  after:w-0 after:h-0.5 after:bg-primary after:-bottom-1.5 after:left-0  hover:after:w-full after:transition-all after:duration-500
