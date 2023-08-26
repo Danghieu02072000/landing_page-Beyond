@@ -49,9 +49,7 @@ module.exports = {
         'cl_heading': '#051441',
         'cl_bg': '#F4F7FD',
         'cl_text': '#5D677E',
-        'cl_box': '#F4F7FF',
         'cl_nav': '#635F85',
-        'cl_bg2': '#EDEFF6',
         'bg-footer': '#052347',
         'text_10': '#101D48',
         'text_7f': '#7F8EA1',
@@ -63,6 +61,7 @@ module.exports = {
         'text_footer' : '#AFACCD',
         'text_copyright': '#8B9FCF',
         'cl_border' : '#E7E7E7',
+        'heading_footer': '#D9E1F0'
       },
       maxWidth : {
         xs:'436px',
@@ -73,7 +72,6 @@ module.exports = {
 
       }
     },
-  },
-  plugins: [],
+},
 }
 
