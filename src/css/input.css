@@ -22,4 +22,9 @@
   .hover_nav {
     @apply after:absolute  after:w-0 after:h-0.5 after:bg-primary after:-bottom-1.5 after:left-0  hover:after:w-full after:transition-all after:duration-500
   }
+  .show {
+    transform: translateY(-30%);
+    opacity: 0;
+    visibility: hidden;
+  }
 }

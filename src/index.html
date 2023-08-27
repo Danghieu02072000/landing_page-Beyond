@@ -7,31 +7,42 @@
   <title>Document</title>
 </head>
 <body> 
-  <header class="max-w-xl mx-auto mt-10">
-    <div class="container">
-      <nav class="flex justify-between items-center">
-          <img src="../src/img/images/logo.png" alt="logo beyond" class="aspect-">
-          <div class="flex justify-between gap-5 2md:gap-20">
-            <ul class="hidden md:flex gap-5 2md:gap-9 items-center">
-              <li><a href="#" class=" text-sm 2md:text-base text-primary font-medium relative hover_nav">Home</a></li>
-              <li><a href="#" class=" text-sm 2md:text-base text-cl_nav hover:text-primary font-medium relative hover_nav">Why us?</a></li>
-              <li><a href="#" class=" text-sm 2md:text-base text-cl_nav hover:text-primary font-medium relative hover_nav">Freatures</a></li>
-              <li><a href="#" class=" text-sm 2md:text-base text-cl_nav hover:text-primary font-medium relative hover_nav">Pricing</a></li>
-              <li><a href="#" class=" text-sm 2md:text-base text-cl_nav hover:text-primary font-medium relative hover_nav">Contact</a></li>
-            </ul>
-            <div class="flex gap-3">
-              <a href="#" class="btn text-primary border border-cl_border hover:text-white hover:bg-primary transition-all duration-300">Login</a>
-              <a href="#" class="btn btn-linear">Sign Up</a>
-            </div>
+  <header class="max-w-xl mx-auto ">
+    <nav class="shadow-xl py-6 fixed top-0 left-0 right-0 z-20 bg-white">
+      <div class="container flex justify-between items-center ">
+        <img src="../src/img/images/logo.png" alt="logo beyond" class="aspect-">
+        <div class="flex justify-between gap-5 2md:gap-20">
+          <ul class="hidden md:flex gap-5 2md:gap-9 items-center">
+            <li><a href="#" class=" text-sm 2md:text-base text-primary font-medium relative hover_nav">Home</a></li>
+            <li><a href="#" class=" text-sm 2md:text-base text-cl_nav hover:text-primary font-medium relative hover_nav">Why us?</a></li>
+            <li><a href="#" class=" text-sm 2md:text-base text-cl_nav hover:text-primary font-medium relative hover_nav">Freatures</a></li>
+            <li><a href="#" class=" text-sm 2md:text-base text-cl_nav hover:text-primary font-medium relative hover_nav">Pricing</a></li>
+            <li><a href="#" class=" text-sm 2md:text-base text-cl_nav hover:text-primary font-medium relative hover_nav">Contact</a></li>
+          </ul>
+          <div class="flex items-center justify-center md:hidden close" id="btn_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 hidden" id="btn_close">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>                          
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 " id="btn_show">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+        </div>
+          <div class="hidden md:flex gap-3">
+            <a href="#" class="btn text-primary border border-cl_border hover:text-white hover:bg-primary transition-all duration-300">Login</a>
+            <a href="#" class="btn btn-linear">Sign Up</a>
           </div>
-      </nav>
-      <div class="mt-10 flex flex-col md:flex-row items-center gap-10">
+        </div>
+      </div>
+  </nav>
+
+    <div class="container">
+      <div class="mt-36 flex flex-col md:flex-row items-center gap-10">
         <div class="">
           <span class="text-xs_0.5 text-primary font-semibold uppercase tracking-widest block">AWARD WINNING COMPANY</span>
           <h1 class="mt-4 max-w-xs text-3xl xs:text-4xl 2md:text-6xl">We Are The Best Digital Markeing</h1>
           <p class="mt-4 max-w-sm text-base text-cl_text font-medium">You need to get positive results when you spend hard earned revenue and time on any marketing effort.
             Great returns on marketing and promotions.</p>
-          <div class="mt-16 flex gap-5 2md:gap-9 items-center">
+          <div class="mt-16 flex gap-3 2xs:gap-5 2md:gap-9 items-center">
             <a href="#" class="btn btn-linear">Get Started</a>
             <a href="#" class=" w-[59px] h-[59px] rounded-full shadow-2xl flex justify-center items-center hover:bg-slate-100"><img src="../src/img/icon/play.png" alt=""></a>
             <span class="inline-block font-semibold text-base text-text_10 ">Watch Video</span>
@@ -42,6 +53,19 @@
         </div>
       </div>
     </div>
+    <div class="fixed top-0 left-0 w-full h-[100vh] z-10 bottom-0 bg-cl_bg flex justify-center items-center flex-col gap-10 xs:gap-20 transition-all duration-500 md:hidden show" id="mobie_menu">
+      <ul class="flex gap-10 xs:gap-16 flex-col justify-center items-center">
+          <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Home</a></li>
+          <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Why us?</a></li>
+          <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Freatures</a></li>
+          <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Pricing</a></li>
+          <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Contact</a></li>
+      </ul>
+      <div class="flex gap-3">
+        <a href="#" class="btn text-primary border border-cl_border hover:text-white hover:bg-primary transition-all duration-300">Login</a>
+        <a href="#" class="btn btn-linear">Sign Up</a>
+      </div>
+  </div>
   </header>
   <main class="mt-14">
     <!-- <section class="bg-cl_bg py-16">
@@ -92,12 +116,12 @@
     <section class="mt-16 max-w-xl mx-auto">
       <div class="container">
         <div class="flex gap-5 md:gap-20 items-center flex-col md:flex-row">
-          <div class="aspect-[601/532.6]">
-            <img src="../src/img/images/img_2.png" alt="">
+          <div class="">
+            <img src="../src/img/images/img_2.png" alt="" loading="lazy" class="aspect-[601/532.6] w-full object-cover">
           </div>
-          <div class="text-start max-w-[70%] md:max-w-[40%]">
+          <div class="text-start max-w-[95%] xs:max-w-[80%] md:max-w-[40%]">
             <h3 class="text-base text-primary uppercase font-semibold">WHO WE ARE</h3>
-            <h2 class="text-4xl mt-6 max-w-xs ">Top #1 Marketing Agency in the World</h2>
+            <h2 class="text-3xl xs:text-4xl mt-6 max-w-xs ">Top #1 Marketing Agency in the World</h2>
             <p class="text-base font-medium text-cl_text mt-8">Nunc venenalis Iorem sed risus trlstque sent per. Duls porta,  rutruni tempus, lectus risus imDerdiet tellus, sed faucibus sum ipsum ncn neque. Curubilu r eleirend, erut ullamcorper porta. eras turpis. </p>
             <a href="#" class="btn btn-linear mt-9">Get In Touch</a>
           </div>
@@ -109,14 +133,14 @@
         <div class="container">
           <div class="flex gap-7 py-24 items-center flex-col-reverse md:flex-row">
 
-            <div class="text-start max-w-[80%] md:max-w-[40%]">
+            <div class="text-start max-w-[95%] xs:max-w-[80%] md:max-w-[40%]">
               <h3 class="text-base text-primary uppercase font-semibold">OUR MISSION & GOAL</h3>
-              <h2 class="text-4xl mt-6 max-w-xs ">Realize Your Business Goals For Profit</h2>
+              <h2 class="text-3xl xs:text-4xl mt-6 max-w-xs ">Realize Your Business Goals For Profit</h2>
               <p class="text-base font-medium text-cl_text mt-8">Nunc venenalis Iorem sed risus trlstque sent per. Duls porta,  rutruni tempus, lectus risus imDerdiet tellus, sed faucibus sum ipsum ncn neque. Curubilu r eleirend, erut ullamcorper porta. eras turpis. </p>
               <a href="#" class="btn btn-linear mt-9">Get In Touch</a>
             </div>
-            <div class="aspect-[602/359]">
-              <img src="../src/img/images/img_1.png" alt="">
+            <div class="max-w-full md:max-w-[55%]">
+              <img src="../src/img/images/img_1.png" alt="" class="aspect-[602/359] w-full object-cover" loading="lazy">
             </div>
           </div>
         </div>
@@ -124,13 +148,13 @@
     </section>
     <section class="mt-24 max-w-xl mx-auto">
       <div class="container">
-        <div class="flex justify-between items-center flex-col md:flex-row">
-          <div class="w-[80%] md:w-[45%]">
-            <img src="../src/img/images/feedback.png" alt="" class="aspect-square">
+        <div class="flex justify-between items-center flex-col md:flex-row gap-7">
+          <div class="w-[95%] xs:w-[80%] md:w-[45%]">
+            <img src="../src/img/images/feedback.png" alt="" class="aspect-square w-full " loading="lazy">
           </div>
-          <div class="w-4/5 md:w-2/5 text-start">
+          <div class="w-[95%] xs:w-4/5 md:w-2/5 text-start">
             <h3 class="text-base text-primary uppercase font-semibold">TESTMONIALS</h3>
-            <h2 class="text-4xl mt-6 max-w-xs ">Client’s Fedback</h2>
+            <h2 class="text-3xl xs:text-4xl mt-6 max-w-xs ">Client’s Fedback</h2>
             <p class="text-base font-medium text-cl_text mt-8">Why I say okl chap that is. sprffing aff his rut car blimey valmor gooxo blaka krcus up bobby shed a-50 William cock Richard. Bloke fanny around cheseci </p>
             <div class="flex items-center gap-2.5 mt-4">
               <div class="w-5 h-5 bg-cl_bg rounded-full flex items-center justify-center">
@@ -146,11 +170,11 @@
     </section>
     <section class="mt-32 max-w-xl mx-auto">
       <div class="container text-center">
-        <h2 class="text-4xl mt-6 max-w-xs mx-auto">Our Regular Updated Blog Posts</h2>
+        <h2 class="text-3xl xs:text-4xl mt-6 max-w-xs mx-auto">Our Regular Updated Blog Posts</h2>
         <p class="text-base font-medium text-cl_text mt-6">tempus, lectus risus In' perdiel tellus, sed faucibus ipsum ipsurn nun neque. </p>
         <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-8 ">
           <div class="w-[80%] md:w-full flex flex-col justify-center text-start rounded-2xl hover:shadow-xl group transition-all duration-500 mx-auto">
-            <img src="../src/img/images/img_blog1.png" alt="" class="aspect-[354/322] w-full">
+            <img src="../src/img/images/img_blog1.png" alt="" class="aspect-[354/322] w-full" loading="lazy">
             <div class="py-6 px-8 bg-white">
               <h3 class="text-lg font-semibold text-cl_heading group-hover:text-primary transition-all duration-500">SEO tips and tricks for new</h3>
               <p class="mt-2 text-text_6d text-sm font-normal">Curapitur eleifenc erat id ullarncorper porta, 
@@ -159,7 +183,7 @@
             </div>
           </div>
           <div class="w-[80%] md:w-full flex flex-col justify-center text-start rounded-2xl hover:shadow-xl group transition-all duration-500 mx-auto">
-            <img src="../src/img/images/img_blog2.png" alt="" class="aspect-[354/322] w-full">
+            <img src="../src/img/images/img_blog2.png" alt="" class="aspect-[354/322] w-full" loading="lazy">
             <div class="py-6 px-8 bg-white">
               <h3 class="text-lg font-semibold text-cl_heading group-hover:text-primary transition-all duration-500">A Guide to Google SEO</h3>
               <p class="mt-2 text-text_6d text-sm font-normal">Curapitur eleifenc erat id ullarncorper porta, 
@@ -168,7 +192,7 @@
             </div>
           </div>
           <div class="w-[80%] md:w-full flex flex-col justify-center text-start rounded-2xl hover:shadow-xl group transition-all duration-500 mx-auto" >
-            <img src="../src/img/images/img_blog3.png" alt="" class="aspect-[354/322] w-full">
+            <img src="../src/img/images/img_blog3.png" alt="" class="aspect-[354/322] w-full" loading="lazy">
             <div class="py-6 px-8 bg-white">
               <h3 class="text-lg font-semibold text-cl_heading group-hover:text-primary transition-all duration-500">Best Practices SEO Content</h3>
               <p class="mt-2 text-text_6d text-sm font-normal">Curapitur eleifenc erat id ullarncorper porta, 
@@ -181,14 +205,14 @@
     </section>
     <section class="mt-32 max-w-xl mx-auto">
       <div class="container">
-        <div class="bg-cl_bg rounded-[67px] pt-16 px-40 pb-24 flex items-center gap-8 md:gap-2 justify-between md:flex-row flex-col">
-          <div class="max-w-full md:max-w-[47%]">
-            <h2 class="text-4xl xl:text-5xl max-w-xs">Sign up to Our Newsletter</h2>
-            <p class="mt-6 text-base font-medium text-text_78 max-w-[340px]">You need to get positive results when you spend hard earned revenue and time.</p>
+        <div class="bg-cl_bg rounded-[67px] pt-16 px-10 lg:px-40 pb-24 flex items-center gap-10 md:gap-2 justify-between md:flex-row flex-col">
+          <div class="max-w-full md:max-w-[47%] text-center md:text-start">
+            <h2 class="text-3xl xs:text-4xl xl:text-5xl max-w-xs">Sign up to Our Newsletter</h2>
+            <p class="mt-6 text-base font-medium text-text_78 max-w-[340px] mx-auto">You need to get positive results when you spend hard earned revenue and time.</p>
           </div>
-          <form action="" class="flex rounded-3xl bg-white max-w-full md:max-w-[50%]">
-            <input type="text" class="outline-none  px-5 placeholder:text-text_6b placeholder:font-medium placeholder:text-base rounded-3xl " placeholder="Email..." >
-            <button class="btn btn-linear " type="submit">Subscribe</button>
+          <form action="" class="flex rounded-3xl bg-white max-w-full md:max-w-[50%] justify-center items-center">
+            <input type="text" class="outline-none  px-5 placeholder:text-text_6b placeholder:font-medium placeholder:text-base rounded-3xl shrink w-full" placeholder="Email..." >
+            <button class="btn btn-linear shrink-0" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
@@ -197,8 +221,8 @@
   <footer class="mt-32 bg-bg-footer">
     <div class="max-w-xl mx-auto">
       <div class="container pt-24 pb-10 mx-auto border-b border-[#11317C]">
-        <div class="grid grid-cols-9 gap-16">
-          <div class="col-span-9 md:col-span-3">
+        <div class="grid grid-cols-9 gap-x-5 gap-y-6 xs:gap-y-16 sm:gap-16">
+          <div class="col-span-9 md:col-span-3 ">
             <img src="../src/img/icon/logo_footer.png" alt="">
             <p class="mt-5 text-sm text-text_footer  font-normal">Nulla non otllo venicula, ultricles lorem a, allquarn nes!. Etlam et lorem lobortls, cony allis nunc. </p>
             <div class="mt-8 flex gap-3">
@@ -213,9 +237,9 @@
               </div>
             </div>
           </div>
-          <div class="col-span-3 md:col-span-2">
+          <div class="col-span-9 xs:col-span-3 md:col-span-2 text-center xs:text-start mt-5 xs:mt-0">
             <h3 class="text-lg font-medium text-heading_footer">Services</h3>
-            <ul class="flex flex-col mt-5 gap-1">
+            <ul class="flex flex-col mt-5 gap-1 ">
               <li><a href="#" class="text-sm font-normal text-text_footer hover:text-blue-400 transition-all duration-300">Email Marketing Social</a></li>
               <li><a href="#" class="text-sm font-normal text-text_footer hover:text-blue-400 transition-all duration-300">Media Marketing Search</a></li>
               <li><a href="#" class="text-sm font-normal text-text_footer hover:text-blue-400 transition-all duration-300">Engine Optimization </a></li>
@@ -223,7 +247,7 @@
               <li><a href="#" class="text-sm font-normal text-text_footer hover:text-blue-400 transition-all duration-300">Web Development </a></li>
             </ul>
           </div>
-          <div class="col-span-3 md:col-span-2">
+          <div class="col-span-9 xs:col-span-3 md:col-span-2 text-center xs:text-start">
             <h3 class="text-lg font-medium text-heading_footer">Support</h3>
             <ul class="flex flex-col mt-5 gap-1">
               <li><a href="#" class="text-sm font-normal text-text_footer hover:text-blue-400 transition-all duration-300">Sizicik. Community </a></li>
@@ -233,7 +257,7 @@
               <li><a href="#" class="text-sm font-normal text-text_footer hover:text-blue-400 transition-all duration-300">Email Contort </a></li>
             </ul>
           </div>
-          <div class="col-span-3 md:col-span-2">
+          <div class="col-span-9 xs:col-span-3 md:col-span-2 text-center xs:text-start">
             <h3 class="text-lg font-medium text-heading_footer">Contact Us</h3>
             <ul class="flex flex-col mt-5 gap-1">
               <li><a href="#" class="text-sm font-normal text-text_footer hover:text-blue-400 transition-all duration-300">suppariaringrozom </a></li>
@@ -247,7 +271,7 @@
         <span class="p-7 inline-block font-normal text-sm text-[#8B9FCF] ">All Right Reserved by Us! Copyright 2021</span>
       </div>
     </div>
-
   </footer>
+  <script src="../src/js/main.js"></script>
 </body>
 </html>
