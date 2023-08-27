@@ -14,7 +14,7 @@
 }
 @layer components {
   .btn {
-    @apply  font-medium text-base  py-4 px-7 leading-4 rounded-[41px] inline-block transition-all duration-1000
+    @apply  font-medium text-sm xs:text-base py-3 px-5  xs:py-4 xs:px-7 leading-4 rounded-[41px] inline-block transition-all duration-1000
   }
   .btn-linear {
      @apply bg-gradient-to-r from-[#F67102] to-[#F4A91E] text-white hover:opacity-75 
