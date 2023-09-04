@@ -558,6 +558,12 @@ h1,
   padding-left: 16px;
 }
 
+@media (min-width: 300px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
 @media (min-width: 330px) {
   .container {
     max-width: 330px;
